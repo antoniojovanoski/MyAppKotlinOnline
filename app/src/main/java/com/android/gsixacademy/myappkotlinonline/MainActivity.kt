@@ -16,7 +16,7 @@ var listActivities: ArrayList<String> = arrayListOf("RelativeLayoutActivity","Ca
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Picasso.get().load("https://tinyjpg.com/images/social/website.jpg").fit().into(image_view_background)
+        Picasso.get().load("https://i.pinimg.com/originals/f7/15/5f/f7155f58160612556d1259cf6aa33895.jpg").fit().into(image_view_background)
 
 
         var activitiesAdapter: ArrayAdapter<String> =  ArrayAdapter(this,android.R.layout.simple_list_item_1,listActivities)
