@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6666ff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Sign In"
+        android:textColor="#fff"
+        android:layout_above="@+id/edit_text_username"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#3366ffff"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+
+        />
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_text_password"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:hint="Username"
+        android:background="#3366ffff"
+        android:layout_marginBottom="16dp"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_below="@+id/edit_text_password"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:background="#66ffff"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_sign_in"
+        android:text="Forgot your password?"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/text_view_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/button_sign_in"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+
+
+    
+
+
+
+</RelativeLayout>
