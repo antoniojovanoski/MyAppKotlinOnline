@@ -19,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
         var mySharedPreferences = getSharedPreferences("KotlinBasicTutorialPreferences", Context.MODE_PRIVATE)
 
         if (mySharedPreferences.contains("userName")) { startActivity(Intent(applicationContext, UserSignedInActivity::class.java))
+            finish()
         }
         button_sign_in.setOnClickListener {
             var userName = edit_text_username.text.toString()
@@ -28,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
             mySharedPreferences.edit().putString("password", password).apply()
 
             startActivity(Intent(applicationContext, UserSignedInActivity::class.java))
+            finish()
         }
     }
 }

@@ -15,7 +15,7 @@ class UserSignedInActivity:AppCompatActivity() {
         text_view_title.text = "Signed in user is $Myusername"
 
         button_log_out.setOnClickListener {
-            mySharedPreferences.edit().remove("$Myusername")
+            mySharedPreferences.edit().clear().apply()
             onBackPressed()
 
         }
