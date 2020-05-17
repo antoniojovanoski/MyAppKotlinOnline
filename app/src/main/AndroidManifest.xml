@@ -23,10 +23,12 @@
         <activity android:name=".CalculatorActivity"/>
         <activity android:name=".TodoListActivity"/>
         <activity android:name=".RecyclerViewActivity"/>
-
+        <activity android:name=".people.PopularPeopleActivity"/>
         <activity android:name=".UserSignedInActivity"/>
         <activity android:name=".CarDetailsActivity"/>
         <activity android:name=".movies.PopularMoviesActivity"/>
+        <activity android:name=".search.SearchMoviesActivity"/>\
+        <activity android:name=".search.SearchPeopleActivity"/>
     </application>
 
 </manifest>
