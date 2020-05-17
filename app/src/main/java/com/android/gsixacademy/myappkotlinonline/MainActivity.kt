@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import com.android.gsixacademy.myappkotlinonline.movies.PopularMoviesActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-var listActivities: ArrayList<String> = arrayListOf("RelativeLayoutActivity","CalculatorActivity","TodoListActivity","RecyclerViewActivity","LoginActivity")
+var listActivities: ArrayList<String> = arrayListOf("RelativeLayoutActivity","CalculatorActivity","TodoListActivity","RecyclerViewActivity","PopularMoviesActivity","LoginActivity")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +34,8 @@ var listActivities: ArrayList<String> = arrayListOf("RelativeLayoutActivity","Ca
 
     "RecyclerViewActivity" -> startActivity(Intent(applicationContext, RecyclerViewActivity::class.java))
                "LoginActivity" -> startActivity(Intent(applicationContext, LoginActivity::class.java))
+
+               "PopularMoviesActivity" -> startActivity(Intent(applicationContext, PopularMoviesActivity::class.java))
 }
 
             Toast.makeText(applicationContext,className,Toast.LENGTH_LONG).show()

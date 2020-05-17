@@ -23,9 +23,10 @@
         <activity android:name=".CalculatorActivity"/>
         <activity android:name=".TodoListActivity"/>
         <activity android:name=".RecyclerViewActivity"/>
-        <activity android:name=".LoginActivity"/>
+
         <activity android:name=".UserSignedInActivity"/>
         <activity android:name=".CarDetailsActivity"/>
+        <activity android:name=".movies.PopularMoviesActivity"/>
     </application>
 
 </manifest>
